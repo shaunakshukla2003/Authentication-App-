@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block content %}
+<form method="post" >
+    {% csrf_token %}
+    <div class='p-3'>
+        <div class="col-lg-5 shadow mx-auto p-0 pt-4"> 
+        <div class="p-3">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Email">
+        </div>
+        <div class="p-3">
+            <input type="text" class="form-control" id="name" name="first_name" placeholder="First name">
+        </div>
+        <div class="p-3">
+            <input type="text" class="form-control" id="name" name="last_name" placeholder="Last name">
+        </div>
+        <div class="p-3">
+            <input type="date" class="form-control" id="name" name="dob" placeholder="Date of Birth">
+        </div>
+        <div class="p-3">
+            <input type="text" class="form-control" id="name" name="address"placeholder="Address">
+        </div>
+         <div class="p-3">
+            <input type="text" class="form-control" id="name" name="phone_number"placeholder="Phone Number">
+        </div>
+        <div class="p-3">
+            <input type="text" class="form-control" id="name" name="city"placeholder="City">
+        </div>  
+        <div class="p-3">
+            <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
+        </div>
+        <div class="p-3">
+            <input type="password" class="form-control" id="exampleInputPassword1" name="confirmpass"placeholder="ConfrimPass">
+        </div>
+        <div class="p-4 d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary ">Signup</button>
+        </div>
+    </div>
+    </div>
+    
+        
+    </form>
+{% endblock %}

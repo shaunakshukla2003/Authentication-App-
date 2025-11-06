@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block content %}
+<form method="post" >
+    {% csrf_token %}
+    <div class="p-5">
+        <div class="col-lg-5 shadow mx-auto p-0 pt-4"> 
+        <div class="p-3">
+            <input type="text" class="form-control" id="name" name="email" placeholder="Enter Email">
+        </div>
+        <div class="p-3">
+            <input type="text" class="form-control" name="password" placeholder="Password">
+        </div>
+        <div class="p-4 d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary ">Login</button>
+        </div>
+    </div>
+    </div>
+    
+        
+    </form>
+{% endblock %}
